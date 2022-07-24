@@ -1,139 +1,178 @@
-<body class="hold-transition sidebar-mini">
-    <div class="wrapper">
-      <!-- Navbar -->
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-    
-        <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
-          <!-- Navbar Search -->
-          <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-              <i class="fas fa-search"></i>
-            </a>
-            <div class="navbar-search-block">
-              <form class="form-inline">
-                <div class="input-group input-group-sm">
-                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                  <div class="input-group-append">
-                    <button class="btn btn-navbar" type="submit">
-                      <i class="fas fa-search"></i>
-                    </button>
-                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </li>
-    
-          <!-- Messages Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
-              <i class="far fa-comments"></i>
-              <span class="badge badge-danger navbar-badge">3</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <a href="#" class="dropdown-item">
-                <!-- Message Start -->
-                <div class="media">
-                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                  <div class="media-body">
-                    <h3 class="dropdown-item-title">
-                      Brad Diesel
-                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                    </h3>
-                    <p class="text-sm">Call me whenever you can...</p>
-                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                  </div>
-                </div>
-                <!-- Message End -->
+<div class="nk-header nk-header-fixed is-light">
+  <div class="container-fluid">
+      <div class="nk-header-wrap">
+          <div class="nk-menu-trigger d-xl-none ms-n1">
+              <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+          </div>
+          <div class="nk-header-brand d-xl-none">
+              <a href="html/index.html" class="logo-link">
+                  <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                  <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
               </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <!-- Message Start -->
-                <div class="media">
-                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                  <div class="media-body">
-                    <h3 class="dropdown-item-title">
-                      John Pierce
-                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                    </h3>
-                    <p class="text-sm">I got your message bro</p>
-                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                  </div>
-                </div>
-                <!-- Message End -->
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <!-- Message Start -->
-                <div class="media">
-                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                  <div class="media-body">
-                    <h3 class="dropdown-item-title">
-                      Nora Silvester
-                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                    </h3>
-                    <p class="text-sm">The subject goes here</p>
-                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                  </div>
-                </div>
-                <!-- Message End -->
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-            </div>
-          </li>
-          <!-- Notifications Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
-              <i class="far fa-bell"></i>
-              <span class="badge badge-warning navbar-badge">15</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <span class="dropdown-item dropdown-header">15 Notifications</span>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-envelope mr-2"></i> 4 new messages
-                <span class="float-right text-muted text-sm">3 mins</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-users mr-2"></i> 8 friend requests
-                <span class="float-right text-muted text-sm">12 hours</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-file mr-2"></i> 3 new reports
-                <span class="float-right text-muted text-sm">2 days</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-              <i class="fas fa-th-large"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.navbar -->
+          </div><!-- .nk-header-brand -->
+          <div class="nk-header-news d-none d-xl-block">
+              <div class="nk-news-list">
+                  <a class="nk-news-item" href="#">
+                      <div class="nk-news-icon">
+                          <em class="icon ni ni-card-view"></em>
+                      </div>
+                      <div class="nk-news-text">
+                          <p>Do you know the latest update of 2022? <span> A overview of our is now available on YouTube</span></p>
+                          <em class="icon ni ni-external"></em>
+                      </div>
+                  </a>
+              </div>
+          </div><!-- .nk-header-news -->
+          <div class="nk-header-tools">
+              <ul class="nk-quick-nav">
+                  <li class="dropdown language-dropdown d-none d-sm-block me-n1">
+                      <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                          <div class="quick-icon border border-light">
+                              <img class="icon" src="./images/flags/english-sq.png" alt="">
+                          </div>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end dropdown-menu-s1">
+                          <ul class="language-list">
+                              <li>
+                                  <a href="#" class="language-item">
+                                      <img src="./images/flags/english.png" alt="" class="language-flag">
+                                      <span class="language-name">English</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="language-item">
+                                      <img src="./images/flags/spanish.png" alt="" class="language-flag">
+                                      <span class="language-name">Español</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="language-item">
+                                      <img src="./images/flags/french.png" alt="" class="language-flag">
+                                      <span class="language-name">Français</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="language-item">
+                                      <img src="./images/flags/turkey.png" alt="" class="language-flag">
+                                      <span class="language-name">Türkçe</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li><!-- .dropdown -->
+                  <li class="dropdown user-dropdown">
+                      <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                          <div class="user-toggle">
+                              <div class="user-avatar sm">
+                                  <em class="icon ni ni-user-alt"></em>
+                              </div>
+                              <div class="user-info d-none d-md-block">
+                                  <div class="user-status">Administrator</div>
+                                  <div class="user-name dropdown-indicator">Abu Bin Ishityak</div>
+                              </div>
+                          </div>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-md dropdown-menu-end dropdown-menu-s1">
+                          <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                              <div class="user-card">
+                                  <div class="user-avatar">
+                                      <span>AB</span>
+                                  </div>
+                                  <div class="user-info">
+                                      <span class="lead-text">Abu Bin Ishtiyak</span>
+                                      <span class="sub-text">info@softnio.com</span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="dropdown-inner">
+                              <ul class="link-list">
+                                  <li><a href="html/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                  <li><a href="html/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                                  <li><a href="html/user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
+                                  <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown-inner">
+                              <ul class="link-list">
+                                  <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </li><!-- .dropdown -->
+                  <li class="dropdown notification-dropdown me-n1">
+                      <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                          <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end dropdown-menu-s1">
+                          <div class="dropdown-head">
+                              <span class="sub-title nk-dropdown-title">Notifications</span>
+                              <a href="#">Mark All as Read</a>
+                          </div>
+                          <div class="dropdown-body">
+                              <div class="nk-notification">
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                                  <div class="nk-notification-item dropdown-inner">
+                                      <div class="nk-notification-icon">
+                                          <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                      </div>
+                                      <div class="nk-notification-content">
+                                          <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                          <div class="nk-notification-time">2 hrs ago</div>
+                                      </div>
+                                  </div>
+                              </div><!-- .nk-notification -->
+                          </div><!-- .nk-dropdown-body -->
+                          <div class="dropdown-foot center">
+                              <a href="#">View All</a>
+                          </div>
+                      </div>
+                  </li><!-- .dropdown -->
+              </ul><!-- .nk-quick-nav -->
+          </div><!-- .nk-header-tools -->
+      </div><!-- .nk-header-wrap -->
+  </div><!-- .container-fliud -->
+</div>

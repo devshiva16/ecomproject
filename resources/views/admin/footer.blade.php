@@ -1,26 +1,12 @@
-<!-- Main Footer -->
-<footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
+<div class="nk-footer">
+  <div class="container-fluid">
+      <div class="nk-footer-wrap">
+          <div class="nk-footer-copyright"> &copy; 2022 DashLite. Template by <a href="https://softnio.com" target="_blank">Softnio</a>
+          </div>
+      </div>
+  </div>
 </div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED SCRIPTS -->
-
-<!-- jQuery -->
-<script src="{{ asset ('plugins/jquery/jquery.min.js' ) }}"></script>
-<!-- Bootstrap -->
-<script src="{{ asset ('plugins/bootstrap/js/bootstrap.bundle.min.js' ) }}"></script>
-<!-- AdminLTE -->
-<script src="{{ asset ('dist/js/adminlte.js' ) }}"></script>
-
-<!-- OPTIONAL SCRIPTS -->
-<script src="{{ asset ('plugins/chart.js/Chart.min.js' ) }}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{ asset ('dist/js/demo.js' ) }}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ asset ('dist/js/pages/dashboard3.js' ) }}"></script>
+<!-- JavaScript -->
+<script src="{{ asset ('assets/js/bundle.js?ver=3.0.3')}}"></script>
+<script src="{{ asset ('assets/js/scripts.js?ver=3.0.3')}}"></script>
+<script src="{{ asset ('assets/js/charts/gd-default.js?ver=3.0.3')}}"></script>

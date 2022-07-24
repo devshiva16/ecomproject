@@ -1,782 +1,549 @@
-<!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Dashboard</a>
-        </div>
+<!-- sidebar @s -->
+<div class="nk-sidebar nk-sidebar-fixed is-dark " data-content="sidebarMenu">
+  <div class="nk-sidebar-element nk-sidebar-head">
+      <div class="nk-menu-trigger">
+          <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+          <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
       </div>
-
-      <!-- SidebarSearch Form -->
-<!--<div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <!--<a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-                <a href="./index.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-               </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li> -->
-          <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>User Role</p>
-            </a>
-          </li> 
-        </ul>
-        
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Users</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Customer</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>City</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Pincode Deliverable</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Products</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Seles</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Discount</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Product Category</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Stock</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Order Table</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Order Item</p>
-            </a>
-          </li> 
-        </ul>
-
-        <ul class="nav nav-treeview">
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>Order Transaction</p>
-            </a>
-          </li> 
-        </ul>
-        <!--  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Tables
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
-              <i class="nav-icon fas fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Kanban Board
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Add</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Detail</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contacts.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contacts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/faq.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>FAQ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Extras
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v1
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v1</p>
-                    </a>
+      <div class="nk-sidebar-brand">
+          <a href="html/index.html" class="logo-link nk-sidebar-logo">
+              <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+              <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+          </a>
+      </div>
+  </div><!-- .nk-sidebar-element -->
+  <div class="nk-sidebar-element nk-sidebar-body">
+      <div class="nk-sidebar-content">
+          <div class="nk-sidebar-menu" data-simplebar>
+              <ul class="nk-menu">
+                  <li class="nk-menu-heading">
+                      <h6 class="overline-title text-primary-alt">Use-Case Preview</h6>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/crm/index.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
+                          <span class="nk-menu-text">CRM Panel</span><span class="nk-menu-badge">HOT</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/hotel/index.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-building"></em></span>
+                          <span class="nk-menu-text">Hotel Management</span><span class="nk-menu-badge">HOT</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-heading">
+                      <h6 class="overline-title text-primary-alt">Dashboards</h6>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/index.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-dashlite"></em></span>
+                          <span class="nk-menu-text">Default Dashboard</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/index-crypto.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
+                          <span class="nk-menu-text">Crypto Dashboard</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/index-analytics.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-growth"></em></span>
+                          <span class="nk-menu-text">Analytics Dashboard</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/index-invest.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-coins"></em></span>
+                          <span class="nk-menu-text">Invest Dashboard</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-heading">
+                      <h6 class="overline-title text-primary-alt">Pre-Built Pages</h6>
+                  </li><!-- .nk-menu-heading -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                          <span class="nk-menu-text">Projects</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Project Cards</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Project List</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
+                          <span class="nk-menu-text">User Manage</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/user-list-regular.html" class="nk-menu-link"><span class="nk-menu-text">User List - Regular</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/user-list-compact.html" class="nk-menu-link"><span class="nk-menu-text">User List - Compact</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/user-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">User Details - Regular</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/user-profile-regular.html" class="nk-menu-link"><span class="nk-menu-text">User Profile - Regular</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/user-card.html" class="nk-menu-link"><span class="nk-menu-text">User Contact - Card</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
+                          <span class="nk-menu-text">AML / KYCs</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/kyc-list-regular.html" class="nk-menu-link"><span class="nk-menu-text">KYC List - Regular</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">KYC Details - Regular</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-tranx"></em></span>
+                          <span class="nk-menu-text">Transactions</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/transaction-basic.html" class="nk-menu-link"><span class="nk-menu-text">Tranx List - Basic</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/transaction-crypto.html" class="nk-menu-link"><span class="nk-menu-text">Tranx List - Crypto</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-grid-alt"></em></span>
+                          <span class="nk-menu-text">Applications</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/apps-messages.html" class="nk-menu-link"><span class="nk-menu-text">Messages</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/apps-inbox.html" class="nk-menu-link"><span class="nk-menu-text">Inbox / Mail</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/apps-file-manager.html" class="nk-menu-link"><span class="nk-menu-text">File Manager</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/apps-chats.html" class="nk-menu-link"><span class="nk-menu-text">Chats / Messenger</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/apps-calendar.html" class="nk-menu-link"><span class="nk-menu-text">Calendar</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/apps-kanban.html" class="nk-menu-link"><span class="nk-menu-text">Kanban Board</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
+                          <span class="nk-menu-text">Invoice</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/invoice-list.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/invoice-details.html" class="nk-menu-link"><span class="nk-menu-text">Invoice Details</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-card-view"></em></span>
+                          <span class="nk-menu-text">Products</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/product-list.html" class="nk-menu-link"><span class="nk-menu-text">Product List</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/product-card.html" class="nk-menu-link"><span class="nk-menu-text">Product Card</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/product-details.html" class="nk-menu-link"><span class="nk-menu-text">Product Details</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/pricing-table.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-view-col"></em></span>
+                          <span class="nk-menu-text">Pricing Table</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/gallery.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-img"></em></span>
+                          <span class="nk-menu-text">Image Gallery</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-heading">
+                      <h6 class="overline-title text-primary-alt">Misc Pages</h6>
+                  </li><!-- .nk-menu-heading -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-signin"></em></span>
+                          <span class="nk-menu-text">Auth Pages</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/pages/auths/auth-login.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Login / Signin</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/auths/auth-register.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Register / Signup</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/auths/auth-reset.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Forgot Password</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/auths/auth-success.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Success / Confirm</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">Classic Version - v2</span></a>
+                              <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-login-v2.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Login / Signin</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-register-v2.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Register / Signup</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-reset-v2.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Forgot Password</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-success-v2.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Success / Confirm</span></a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">No Slider Version - v3</span></a>
+                              <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-login-v3.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Login / Signin</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-register-v3.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Register / Signup</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-reset-v3.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Forgot Password</span></a>
+                                  </li>
+                                  <li class="nk-menu-item">
+                                      <a href="html/pages/auths/auth-success-v3.html" class="nk-menu-link" target="_blank"><span class="nk-menu-text">Success / Confirm</span></a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                          <span class="nk-menu-text">Error Pages</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/pages/errors/404-classic.html" target="_blank" class="nk-menu-link"><span class="nk-menu-text">404 Classic</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/errors/504-classic.html" target="_blank" class="nk-menu-link"><span class="nk-menu-text">504 Classic</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/errors/404-s1.html" target="_blank" class="nk-menu-link"><span class="nk-menu-text">404 Modern</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/errors/504-s1.html" target="_blank" class="nk-menu-link"><span class="nk-menu-text">504 Modern</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                          <span class="nk-menu-text">Other Pages</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/_blank.html" class="nk-menu-link"><span class="nk-menu-text">Blank / Startup</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/faqs.html" class="nk-menu-link"><span class="nk-menu-text">Faqs / Help</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/terms-policy.html" class="nk-menu-link"><span class="nk-menu-text">Terms / Policy</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/regular-v1.html" class="nk-menu-link"><span class="nk-menu-text">Regular Page - v1</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/pages/regular-v2.html" class="nk-menu-link"><span class="nk-menu-text">Regular Page - v2</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-heading">
+                      <h6 class="overline-title text-primary-alt">Components</h6>
+                  </li><!-- .nk-menu-heading -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-layers"></em></span>
+                          <span class="nk-menu-text">Ui Elements</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/alerts.html" class="nk-menu-link"><span class="nk-menu-text">Alerts</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/accordions.html" class="nk-menu-link"><span class="nk-menu-text">Accordions</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/avatar.html" class="nk-menu-link"><span class="nk-menu-text">Avatar</span> <span class="nk-menu-badge">New</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/badges.html" class="nk-menu-link"><span class="nk-menu-text">Badges</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/buttons.html" class="nk-menu-link"><span class="nk-menu-text">Buttons</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/buttons-group.html" class="nk-menu-link"><span class="nk-menu-text">Button Group</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/breadcrumb.html" class="nk-menu-link"><span class="nk-menu-text">Breadcrumb</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/cards.html" class="nk-menu-link"><span class="nk-menu-text">Cards</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/carousel.html" class="nk-menu-link"><span class="nk-menu-text">Carousel</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/list-dropdown.html" class="nk-menu-link"><span class="nk-menu-text">List Dropdown</span><span class="nk-menu-badge">New</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/modals.html" class="nk-menu-link"><span class="nk-menu-text">Modals</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/pagination.html" class="nk-menu-link"><span class="nk-menu-text">Pagination</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/popover.html" class="nk-menu-link"><span class="nk-menu-text">Popovers</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/progress.html" class="nk-menu-link"><span class="nk-menu-text">Progress</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/spinner.html" class="nk-menu-link"><span class="nk-menu-text">Spinner</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/tabs.html" class="nk-menu-link"><span class="nk-menu-text">Tabs</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/toast.html" class="nk-menu-link"><span class="nk-menu-text">Toasts</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/tooltip.html" class="nk-menu-link"><span class="nk-menu-text">Tooltip</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/elements/typography.html" class="nk-menu-link"><span class="nk-menu-text">Typography</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">Utilities</span></a>
+                              <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-border.html" class="nk-menu-link"><span class="nk-menu-text">Border</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-colors.html" class="nk-menu-link"><span class="nk-menu-text">Colors</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-display.html" class="nk-menu-link"><span class="nk-menu-text">Display</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-embeded.html" class="nk-menu-link"><span class="nk-menu-text">Embeded</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-flex.html" class="nk-menu-link"><span class="nk-menu-text">Flex</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-text.html" class="nk-menu-link"><span class="nk-menu-text">Text</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-sizing.html" class="nk-menu-link"><span class="nk-menu-text">Sizing</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-spacing.html" class="nk-menu-link"><span class="nk-menu-text">Spacing</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/elements/util-others.html" class="nk-menu-link"><span class="nk-menu-text">Others</span></a></li>
+                              </ul><!-- .nk-menu-sub -->
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-dot-box"></em></span>
+                          <span class="nk-menu-text">Crafted Icons</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/svg-icons.html" class="nk-menu-link">
+                                  <span class="nk-menu-text">SVG Icon - Exclusive</span>
+                              </a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/nioicon.html" class="nk-menu-link">
+                                  <span class="nk-menu-text">Nioicon - HandCrafted</span>
+                              </a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/components/misc/icons.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-menu-circled"></em></span>
+                          <span class="nk-menu-text">Icon Libraries</span>
+                      </a>
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-table-view"></em></span>
+                          <span class="nk-menu-text">Tables</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/tables/table-basic.html" class="nk-menu-link"><span class="nk-menu-text">Basic Tables</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/tables/table-special.html" class="nk-menu-link"><span class="nk-menu-text">Special Tables</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/tables/table-datatable.html" class="nk-menu-link"><span class="nk-menu-text">DataTables</span> <span class="nk-menu-badge">New</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-card-view"></em></span>
+                          <span class="nk-menu-text">Forms</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/form-elements.html" class="nk-menu-link"><span class="nk-menu-text">Form Elements</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/checkbox-radio.html" class="nk-menu-link"><span class="nk-menu-text">Checkbox Radio</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/advanced-controls.html" class="nk-menu-link"><span class="nk-menu-text">Advanced Controls</span> <span class="nk-menu-badge">New</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/input-group.html" class="nk-menu-link"><span class="nk-menu-text">Input Group</span> <span class="nk-menu-badge">New</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/form-upload.html" class="nk-menu-link"><span class="nk-menu-text">Form Upload</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/datetime-picker.html" class="nk-menu-link"><span class="nk-menu-text">Date &amp; Time Picker</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/number-spinner.html" class="nk-menu-link"><span class="nk-menu-text">Number Spinner</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/nouislider.html" class="nk-menu-link"><span class="nk-menu-text">noUiSlider</span> <span class="nk-menu-badge">New</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/form-layouts.html" class="nk-menu-link"><span class="nk-menu-text">Form Layouts</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/forms/form-validation.html" class="nk-menu-link"><span class="nk-menu-text">Form Validation</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">Wizard</span></a>
+                              <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item"><a href="html/components/forms/form-wizard.html" class="nk-menu-link"><span class="nk-menu-text">Basic Demo</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/forms/wizard/create-project.html" class="nk-menu-link"><span class="nk-menu-text">Create Project</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/forms/wizard/create-profile.html" class="nk-menu-link"><span class="nk-menu-text">Create Profile</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/forms/wizard/two-factor-auth.html" class="nk-menu-link"><span class="nk-menu-text">Two Factor Auth</span></a></li>
+                                  <li class="nk-menu-item"><a target="_blank" href="html/components/forms/wizard/survey-v1.html" class="nk-menu-link"><span class="nk-menu-text">Survey</span></a></li>
+                                  <li class="nk-menu-item"><a target="_blank" href="html/components/forms/wizard/survey-v2.html" class="nk-menu-link"><span class="nk-menu-text">Survey v2</span></a></li>
+                              </ul><!-- .nk-menu-sub -->
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="#" class="nk-menu-link nk-menu-toggle"><span class="nk-menu-text">Rich Editor</span></a>
+                              <ul class="nk-menu-sub">
+                                  <li class="nk-menu-item"><a href="html/components/forms/form-summernote.html" class="nk-menu-link"><span class="nk-menu-text">Summernote</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/forms/form-quill.html" class="nk-menu-link"><span class="nk-menu-text">Quill</span></a></li>
+                                  <li class="nk-menu-item"><a href="html/components/forms/form-tinymce.html" class="nk-menu-link"><span class="nk-menu-text">Tinymce</span></a></li>
+                              </ul><!-- .nk-menu-sub -->
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-pie"></em></span>
+                          <span class="nk-menu-text">Charts</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/charts/chartjs.html" class="nk-menu-link"><span class="nk-menu-text">Chart JS</span></a>
+                          </li>
+                          <li class="nk-menu-item">
+                              <a href="html/components/charts/knob.html" class="nk-menu-link"><span class="nk-menu-text">Knob JS</span></a>
+                          </li>
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-puzzle"></em></span>
+                          <span class="nk-menu-text">Widgets</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/widgets/cards.html" class="nk-menu-link"><span class="nk-menu-text">Card Widgets</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/widgets/charts.html" class="nk-menu-link"><span class="nk-menu-text">Chart Widgets</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/widgets/ratings.html" class="nk-menu-link"><span class="nk-menu-text">Ratings Widgets</span><span class="nk-menu-badge">New</span></a>
+                          </li><!-- .nk-menu-item -->
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item has-sub">
+                      <a href="#" class="nk-menu-link nk-menu-toggle">
+                          <span class="nk-menu-icon"><em class="icon ni ni-block-over"></em></span>
+                          <span class="nk-menu-text">Miscellaneous</span>
+                      </a>
+                      <ul class="nk-menu-sub">
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/slick-sliders.html" class="nk-menu-link"><span class="nk-menu-text">Slick Slider</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/toastr.html" class="nk-menu-link"><span class="nk-menu-text">Toastr</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/sweet-alert.html" class="nk-menu-link"><span class="nk-menu-text">Sweet Alert</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/js-tree.html" class="nk-menu-link"><span class="nk-menu-text">jsTree</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/dual-listbox.html" class="nk-menu-link"><span class="nk-menu-text">Dual Listbox</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/dragula.html" class="nk-menu-link"><span class="nk-menu-text">Dragula</span><span class="nk-menu-badge">New</span></a>
+                          </li><!-- .nk-menu-item -->
+                          <li class="nk-menu-item">
+                              <a href="html/components/misc/map.html" class="nk-menu-link"><span class="nk-menu-text">Google Map</span><span class="nk-menu-badge">New</span></a>
+                          </li><!-- .nk-menu-item -->
+                      </ul><!-- .nk-menu-sub -->
+                  </li><!-- .nk-menu-item -->
+                  <li class="nk-menu-item">
+                      <a href="html/email-templates.html" class="nk-menu-link">
+                          <span class="nk-menu-icon"><em class="icon ni ni-text-rich"></em></span>
+                          <span class="nk-menu-text">Email Template</span>
+                      </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v1</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v1</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Login & Register v2
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="pages/examples/login-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Login v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/register-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Register v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Forgot Password v2</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Recover Password v2</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/lockscreen.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Lockscreen</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/legacy-user-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Legacy User Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/language-menu.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Language Menu</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/404.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 404</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/500.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Error 500</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/pace.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pace</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/blank.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Blank Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="starter.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Starter Page</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-search"></i>
-              <p>
-                Search
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/search/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Search</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/search/enhanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Enhanced</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">MISCELLANEOUS</li>
-          <li class="nav-item">
-            <a href="iframe.html" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>Tabbed IFrame Plugin</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Documentation</p>
-            </a>
-          </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-circle"></i>
-              <p>
-                Level 1
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    Level 2
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="far fa-dot-circle nav-icon"></i>
-                      <p>Level 3</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Level 2</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
-            </a>
-          </li>
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
-            </a>
-          </li> -->
-          
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+              </ul><!-- .nk-menu -->
+          </div><!-- .nk-sidebar-menu -->
+      </div><!-- .nk-sidebar-content -->
+  </div><!-- .nk-sidebar-element -->
+</div>
+<!-- sidebar @e -->
