@@ -23,6 +23,6 @@ Route::get('dashboard', function () {
 // Product
 Route::get('product', [ProductController::class,'index']);
 
-Route::get('add-product', [ProductController::class,'create']);
+Route::get('product-detail', [ProductController::class,'show']);
 
 Route::resource('temp',TempController::class);
