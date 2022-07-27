@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
+use App\Models\Stock;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class StockController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('admin.product.product-list');
+        //
     }
 
     /**
@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product.add-product2');
+        //
     }
 
     /**
@@ -41,21 +41,21 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Stock  $stock
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Stock $stock)
     {
-        return view('admin.product.product-detail');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Stock  $stock
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Stock $stock)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Stock  $stock
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Stock $stock)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Stock  $stock
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Stock $stock)
     {
         //
     }
