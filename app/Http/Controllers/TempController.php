@@ -14,7 +14,7 @@ class TempController extends Controller
      */
     public function index()
     {
-        return view('admin.product.add-product');
+        return view('admin.datatable');
     }
 
     /**

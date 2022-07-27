@@ -14,7 +14,7 @@ class OrderTransationController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.customer.order-transation');
     }
 
     /**

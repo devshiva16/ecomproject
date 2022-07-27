@@ -5,7 +5,7 @@
 <div class="nk-block-head nk-block-head-sm">
     <div class="nk-block-between">
         <div class="nk-block-head-content">
-            <h3 class="nk-block-title page-title">Products</h3>
+            <h3 class="nk-block-title page-title">Customer List</h3>
         </div><!-- .nk-block-head-content -->
         <div class="nk-block-head-content">
             <div class="toggle-wrap nk-block-tools-toggle">
@@ -32,10 +32,10 @@
                                 </div>
                             </div>
                         </li> --}}
-                        <li class="nk-block-tools-opt">
+                        {{-- <li class="nk-block-tools-opt">
                             <a href="#" data-target="addProduct" class="toggle btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
                             <a href="#" data-target="addProduct" class="toggle btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Add Product</span></a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -54,15 +54,15 @@
                                 <label class="custom-control-label" for="pid"></label>
                             </div>
                         </div>
-                        <div class="nk-tb-col tb-col-sm"><span>Name</span></div>
-                        <div class="nk-tb-col"><span>Code</span></div>
-                        <div class="nk-tb-col"><span>Short Name</span></div>
-                        <div class="nk-tb-col"><span>Price</span></div>
-                        <div class="nk-tb-col"><span>Unit</span></div>
-                        <div class="nk-tb-col"><span>Weight</span></div>
+                        <div class="nk-tb-col tb-col-sm"><span>First Name</span></div>
+                        <div class="nk-tb-col"><span>Last Name</span></div>
+                        <div class="nk-tb-col"><span>Contact No.</span></div>
+                        <div class="nk-tb-col"><span>Email ID</span></div>
+                        <div class="nk-tb-col"><span>Address</span></div>
+                        {{-- <div class="nk-tb-col"><span>Weight</span></div>
                         <div class="nk-tb-col"><span>SKU</span></div>
                         <div class="nk-tb-col"><span>Stock</span></div>
-                        <div class="nk-tb-col tb-col-md"><span>Category</span></div>
+                        <div class="nk-tb-col tb-col-md"><span>Category</span></div> --}}
                         <div class="nk-tb-col tb-col-md"><em class="tb-asterisk icon ni ni-star-round"></em></div>
                         <div class="nk-tb-col nk-tb-col-tools">
                             <ul class="nk-tb-actions gx-1 my-n1">
@@ -91,23 +91,23 @@
                         </div>
                         <div class="nk-tb-col tb-col-sm">
                             <span class="tb-product">
-                                <img src="./images/product/a.png" alt="" class="thumb">
-                                <span class="title">product name</span>
+                                <!-- <img src="./images/product/a.png" alt="" class="thumb"> -->
+                                <span class="title">first name</span>
                             </span>
                         </div>
                         <div class="nk-tb-col">
-                            <span class="tb-sub">code</span>
+                            <span class="tb-sub">last name</span>
                         </div>
                         <div class="nk-tb-col">
-                            <span class="tb-sub">short name</span>
+                            <span class="tb-sub">contact no.</span>
                         </div>
                         <div class="nk-tb-col">
-                            <span class="tb-lead">$ price</span>
+                            <span class="tb-sub">email id</span>
                         </div>
                         <div class="nk-tb-col">
-                            <span class="tb-sub">unit</span>
+                            <span class="tb-sub">address</span>
                         </div>
-                        <div class="nk-tb-col">
+                        {{-- <div class="nk-tb-col">
                             <span class="tb-sub">weight</span>
                         </div>
                         <div class="nk-tb-col">
@@ -118,7 +118,7 @@
                         </div>
                         <div class="nk-tb-col tb-col-md">
                             <span class="tb-sub">category</span>
-                        </div>
+                        </div> --}}
                         <div class="nk-tb-col tb-col-md">
                             <div class="asterisk tb-asterisk">
                                 <a href="#"><em class="asterisk-off icon ni ni-star"></em><em class="asterisk-on icon ni ni-star-fill"></em></a>
@@ -623,7 +623,7 @@
         </div>
     </div>
 </div><!-- .nk-block -->
-<div class="nk-add-product toggle-slide toggle-slide-right" data-content="addProduct" data-toggle-screen="any" data-toggle-overlay="true" data-toggle-body="true" data-simplebar>
+{{-- <div class="nk-add-product toggle-slide toggle-slide-right" data-content="addProduct" data-toggle-screen="any" data-toggle-overlay="true" data-toggle-body="true" data-simplebar>
     <div class="nk-block-head">
         <div class="nk-block-head-content">
             <h5 class="nk-block-title">New Product</h5>
@@ -702,6 +702,6 @@
             </div>
         </div>
     </div><!-- .nk-block -->
-</div>
+</div> --}}
 
 @endsection

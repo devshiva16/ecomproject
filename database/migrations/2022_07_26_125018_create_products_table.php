@@ -19,8 +19,10 @@ class CreateProductsTable extends Migration
             $table->string('code');
             $table->string('short_name');
             $table->string('price');
+            $table->string('sale_price');
             $table->string('unit');
             $table->string('weight');
+            $table->string('sku');
             $table->string('category');
             $table->string('status');
             $table->boolean('is_delete');

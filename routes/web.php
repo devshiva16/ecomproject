@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TempController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderTransationController;
+use App\Http\Controllers\WishlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +29,13 @@ Route::get('product', [ProductController::class,'index']);
 
 Route::get('product-detail', [ProductController::class,'show']);
 
-Route::resource('temp',TempController::class);
+Route::get('temp',[TempController::class,'index']);
+
+// Customer
+Route::get('customer',[CustomerController::class,'index']);
+
+Route::get('cart',[CartController::class,'index']);
+
+Route::get('wishlist', [WishlistController::class,'index']);
+
+Route::get('transation',[OrderTransationController::class,'index']);
