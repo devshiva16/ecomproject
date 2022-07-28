@@ -14,7 +14,7 @@ class OrderItumController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.customer.order-item');
     }
 
     /**
