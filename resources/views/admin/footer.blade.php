@@ -7,6 +7,7 @@
   </div>
 </div>
 <!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{{ asset ('assets/js/bundle.js?ver=3.0.3')}}"></script>
 <script src="{{ asset ('assets/js/scripts.js?ver=3.0.3')}}"></script>
 <script src="{{ asset ('assets/js/charts/gd-default.js?ver=3.0.3')}}"></script>

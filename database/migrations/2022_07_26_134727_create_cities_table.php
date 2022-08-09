@@ -15,10 +15,10 @@ class CreateCitiesTable extends Migration
     {
         Schema::create('cities', function (Blueprint $table) {
             $table->id(); 
-            $table->string('name');
-            $table->string('state_id');
-            $table->string('pincode');
-            $table->string('status');
+            $table->string('name')->nullable();
+            $table->string('state_id')->nullable();
+            $table->string('pincode')->nullable();
+            $table->boolean('status');
             $table->boolean('is_delete');
             $table->timestamps();
         });

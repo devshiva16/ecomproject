@@ -6,13 +6,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TempController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OrderItumController;
 use App\Http\Controllers\OrderTableController;
 use App\Http\Controllers\OrderTransationController;
+use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserRoleController;
 use App\Http\Controllers\WishlistController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,10 +33,17 @@ Route::get('dashboard', function () {
 });
 
 
-// Product
-Route::get('product', [ProductController::class,'index']);
 
-Route::get('product-detail', [ProductController::class,'show']);
+//Users
+Route::resource('users',UserController::class);
+
+Route::resource('user-role',UserRoleController::class);
+
+
+// Product
+Route::resource('product',ProductController::class);
+
+Route::resource('category',CategoryController::class);
 
 Route::get('temp',[TempController::class,'index']);
 
@@ -41,9 +51,10 @@ Route::get('sales',[SalesController::class,'index']);
 
 
 // Customer
-Route::get('customer',[CustomerController::class,'index']);
+Route::resource('customer',CustomerController::class);
 
 Route::get('cart',[CartController::class,'index']);
+Route::get('cart/add',[CartController::class,'create']);
 
 Route::get('wishlist', [WishlistController::class,'index']);
 
@@ -52,6 +63,8 @@ Route::get('transation',[OrderTransationController::class,'index']);
 Route::get('ordertable',[OrderTableController::class,'index']);
 
 Route::get('orderitem',[OrderItumController::class,'index']);
+
+
 
 
 

@@ -14,7 +14,9 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return view('admin.customer.customer-list');
+        $customer_list = Customer::all();
+
+        return view('admin.customer.customer-list',['customer_list'=>$customer_list]);
     }
 
     /**
@@ -24,7 +26,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        return view('admin.product.edit-product');
+        //
     }
 
     /**

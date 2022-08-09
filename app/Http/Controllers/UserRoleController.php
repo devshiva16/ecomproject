@@ -14,7 +14,9 @@ class UserRoleController extends Controller
      */
     public function index()
     {
-        return view('admin.user.user-role');
+        $user_role = User_Role::all();
+
+        return view('admin.user.userrole-list',['user_role'=>$user_role]);
     }
 
     /**

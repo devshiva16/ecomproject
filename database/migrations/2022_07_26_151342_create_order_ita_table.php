@@ -15,13 +15,13 @@ class CreateOrderItaTable extends Migration
     {
         Schema::create('order_ita', function (Blueprint $table) {
             $table->id();
-            $table->string('product_id');
-            $table->string('quantity');
-            $table->string('rate');
-            $table->string('total');
-            $table->string('order_id');
-            $table->string('discount');
-            $table->string('status');
+            $table->string('product_id')->nullable();
+            $table->string('quantity')->nullable();
+            $table->string('rate')->nullable();
+            $table->string('total')->nullable();
+            $table->string('order_id')->nullable();
+            $table->string('discount')->nullable();
+            $table->boolean('status');
             $table->boolean('is_delete');
             $table->timestamps();
         });

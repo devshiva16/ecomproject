@@ -16,51 +16,6 @@
       <div class="nk-sidebar-content">
           <div class="nk-sidebar-menu" data-simplebar>
               <ul class="nk-menu">
-                  {{-- <li class="nk-menu-heading">
-                      <h6 class="overline-title text-primary-alt">Use-Case Preview</h6>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/crm/index.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
-                          <span class="nk-menu-text">CRM Panel</span><span class="nk-menu-badge">HOT</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/hotel/index.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-building"></em></span>
-                          <span class="nk-menu-text">Hotel Management</span><span class="nk-menu-badge">HOT</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-heading">
-                      <h6 class="overline-title text-primary-alt">Dashboards</h6>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/index.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-dashlite"></em></span>
-                          <span class="nk-menu-text">Default Dashboard</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/index-crypto.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
-                          <span class="nk-menu-text">Crypto Dashboard</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/index-analytics.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-growth"></em></span>
-                          <span class="nk-menu-text">Analytics Dashboard</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-item">
-                      <a href="html/index-invest.html" class="nk-menu-link">
-                          <span class="nk-menu-icon"><em class="icon ni ni-coins"></em></span>
-                          <span class="nk-menu-text">Invest Dashboard</span>
-                      </a>
-                  </li><!-- .nk-menu-item -->
-                  <li class="nk-menu-heading">
-                      <h6 class="overline-title text-primary-alt">Pre-Built Pages</h6>
-                  </li><!-- .nk-menu-heading --> --}}
                   
                   <li class="nk-menu-item has-sub">
                       <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -69,10 +24,10 @@
                       </a>
                       <ul class="nk-menu-sub">
                           <li class="nk-menu-item">
-                              <a href="html/user-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Users</span></a>
+                              <a href="/users" class="nk-menu-link"><span class="nk-menu-text">Users</span></a>
                           </li>
                           <li class="nk-menu-item">
-                              <a href="html/user-profile-regular.html" class="nk-menu-link"><span class="nk-menu-text">User Role</span></a>
+                              <a href="/user-role" class="nk-menu-link"><span class="nk-menu-text">User Role</span></a>
                           </li>
                       </ul><!-- .nk-menu-sub -->
                   </li><!-- .nk-menu-item -->
@@ -91,14 +46,14 @@
                 </li><!-- .nk-menu-item -->
 
                   <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                    <a href="" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
                         <span class="nk-menu-text">Products</span>
                     </a>
                     <ul class="nk-menu-sub">
                         
                         <li class="nk-menu-item">
-                            <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Product List</span></a>
+                            <a href="/product" class="nk-menu-link"><span class="nk-menu-text">Product List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
@@ -110,7 +65,7 @@
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Product Category</span></a>
+                            <a href="/category" class="nk-menu-link"><span class="nk-menu-text">Product Category</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
@@ -123,7 +78,7 @@
                     <ul class="nk-menu-sub">
                         
                         <li class="nk-menu-item">
-                            <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>
+                            <a href="/customer" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->

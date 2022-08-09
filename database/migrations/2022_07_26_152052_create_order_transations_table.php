@@ -15,10 +15,10 @@ class CreateOrderTransationsTable extends Migration
     {
         Schema::create('order_transations', function (Blueprint $table) {
             $table->id();
-            $table->string('transation_id');
-            $table->string('order_id');
-            $table->string('status');
-            $table->string('amount');
+            $table->string('transation_id')->nullable();
+            $table->string('order_id')->nullable();
+            $table->string('amount')->nullable();
+            $table->boolean('status');  
             $table->boolean('is_delete');
             $table->timestamps();
         });

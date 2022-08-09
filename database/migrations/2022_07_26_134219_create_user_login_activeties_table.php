@@ -15,10 +15,10 @@ class CreateUserLoginActivetiesTable extends Migration
     {
         Schema::create('user_login_activeties', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('ip');
-            $table->string('login_date');
-            $table->string('login_status');
+            $table->string('user_id')->nullable();
+            $table->string('ip')->nullable();
+            $table->string('login_date')->nullable();
+            $table->boolean('login_status');
             $table->boolean('is_delete');
             $table->timestamps();
         });

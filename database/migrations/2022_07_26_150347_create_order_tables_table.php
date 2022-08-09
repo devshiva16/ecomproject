@@ -15,12 +15,12 @@ class CreateOrderTablesTable extends Migration
     {
         Schema::create('order_tables', function (Blueprint $table) {
             $table->id();
-            $table->string('customer_id');
-            $table->string('total_amount');
-            $table->string('discount');
-            $table->string('payment_mode');
-            $table->string('status');
-            $table->string('p_status');
+            $table->string('customer_id')->nullable();
+            $table->string('total_amount')->nullable();
+            $table->string('discount')->nullable();
+            $table->string('payment_mode')->nullable();
+            $table->boolean('status');
+            $table->string('p_status')->nullable();
             $table->boolean('is_delete');
             $table->timestamps();
         });

@@ -12,9 +12,15 @@ class CartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    // public function index()
+    // {
+    //     return view('admin.customer.cart');
+    // }
+
     public function index()
     {
-        return view('admin.customer.cart');
+        return view('admin.product.add-product2');
     }
 
     /**
@@ -24,7 +30,7 @@ class CartController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

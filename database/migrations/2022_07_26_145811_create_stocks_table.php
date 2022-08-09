@@ -15,9 +15,9 @@ class CreateStocksTable extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
-            $table->string('product');
-            $table->string('in_stock_quantity');
-            $table->string('status');
+            $table->string('product')->nullable();
+            $table->string('in_stock_quantity')->nullable();
+            $table->boolean('status');
             $table->boolean('is_delete');
             $table->timestamps();
         });
