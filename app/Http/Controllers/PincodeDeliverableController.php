@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\City;
+use App\Models\Country;
 use App\Models\Pincode_Deliverable;
+use App\Models\Product;
+use App\Models\State;
 use Illuminate\Http\Request;
 
 class PincodeDeliverableController extends Controller
@@ -14,7 +18,8 @@ class PincodeDeliverableController extends Controller
      */
     public function index()
     {
-        //
+        $pincode_list = Pincode_Deliverable::all();
+        return view('admin.address.pincode-list',['pincode_list'=>$pincode_list]);
     }
 
     /**
@@ -24,7 +29,10 @@ class PincodeDeliverableController extends Controller
      */
     public function create()
     {
-        //
+        $city = City::all();
+        $state = State::all();
+        $country = Country::all();
+        return view('admin.address.add-pincode',['city'=>$city,'state'=>$state,'country'=>$country]);
     }
 
     /**

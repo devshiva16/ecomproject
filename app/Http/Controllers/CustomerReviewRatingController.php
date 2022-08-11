@@ -14,7 +14,8 @@ class CustomerReviewRatingController extends Controller
      */
     public function index()
     {
-        //
+        $customerrating = Customer_Review_Rating::all();
+        return view('admin.customer.customer-rating-list',['customerrating'=>$customerrating]);
     }
 
     /**

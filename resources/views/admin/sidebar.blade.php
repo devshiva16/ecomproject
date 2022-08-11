@@ -6,9 +6,10 @@
           <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
       </div>
       <div class="nk-sidebar-brand">
-          <a href="html/index.html" class="logo-link nk-sidebar-logo">
-              <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
-              <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+          <a href="/dashboard" class="logo-link nk-sidebar-logo">
+            <h4 style="color:blueviolet">Dashboard</h4>
+              {{-- <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+              <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark"> --}}
           </a>
       </div>
   </div><!-- .nk-sidebar-element -->
@@ -19,7 +20,7 @@
                   
                   <li class="nk-menu-item has-sub">
                       <a href="#" class="nk-menu-link nk-menu-toggle">
-                          <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
+                          <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
                           <span class="nk-menu-text">User Manage</span>
                       </a>
                       <ul class="nk-menu-sub">
@@ -34,7 +35,7 @@
 
                   <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                        <span class="nk-menu-icon"><em class="icon ni ni-building"></em></span>
                         <span class="nk-menu-text">Address</span>
                     </a>
                     <ul class="nk-menu-sub">
@@ -47,7 +48,7 @@
 
                   <li class="nk-menu-item has-sub">
                     <a href="" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                        <span class="nk-menu-icon"><em class="icon ni ni-card-view"></em></span>
                         <span class="nk-menu-text">Products</span>
                     </a>
                     <ul class="nk-menu-sub">
@@ -70,6 +71,18 @@
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
+                <li class="nk-menu-item has-sub">
+                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                        <span class="nk-menu-icon"><em class="icon ni ni-coins"></em></span>
+                        <span class="nk-menu-text">Stock</span>
+                    </a>
+                    <ul class="nk-menu-sub">
+                        <li class="nk-menu-item">
+                            <a href="/stock" class="nk-menu-link"><span class="nk-menu-text">Stock List</span></a>
+                        </li>
+                    </ul><!-- .nk-menu-sub -->
+                </li><!-- .nk-menu-item -->
+
                   <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
@@ -84,20 +97,20 @@
                 </li><!-- .nk-menu-item -->
 
                 <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                    <a href="" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
                         <span class="nk-menu-text">Customer Review Rating</span>
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Customer Review Rating</span></a>
+                            <a href="/rating" class="nk-menu-link"><span class="nk-menu-text">Customer Review Rating</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
+                        <span class="nk-menu-icon"><em class="icon ni ni-signin"></em></span>
                         <span class="nk-menu-text">User Login Activity</span>
                     </a>
                     <ul class="nk-menu-sub">
@@ -108,14 +121,14 @@
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
-                  <li class="nk-menu-item has-sub">
+                  {{-- <li class="nk-menu-item has-sub">
                       <a href="#" class="nk-menu-link nk-menu-toggle">
                           <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
                           <span class="nk-menu-text">City</span>
                       </a>
                       <ul class="nk-menu-sub">
                           <li class="nk-menu-item">
-                              <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">City List</span></a>
+                              <a href="/city" class="nk-menu-link"><span class="nk-menu-text">City List</span></a>
                           </li>
                       </ul><!-- .nk-menu-sub -->
                   </li><!-- .nk-menu-item -->
@@ -127,7 +140,7 @@
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">State List</span></a>
+                            <a href="/state" class="nk-menu-link"><span class="nk-menu-text">State List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
@@ -139,10 +152,10 @@
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Country List</span></a>
+                            <a href="/country" class="nk-menu-link"><span class="nk-menu-text">Country List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
+                </li><!-- .nk-menu-item --> --}}
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -151,14 +164,14 @@
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Pincode Deliverable List</span></a>
+                            <a href="/pincode" class="nk-menu-link"><span class="nk-menu-text">Pincode Deliverable List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
+                        <span class="nk-menu-icon"><em class="icon ni ni-growth"></em></span>
                         <span class="nk-menu-text">Sales</span>
                     </a>
                     <ul class="nk-menu-sub">
@@ -175,12 +188,12 @@
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Discount</span></a>
+                            <a href="/discount" class="nk-menu-link"><span class="nk-menu-text">Discount</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
-                <li class="nk-menu-item has-sub">
+                {{-- <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
                         <span class="nk-menu-text">Cart</span>
@@ -202,19 +215,9 @@
                             <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Wishlist</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
+                </li><!-- .nk-menu-item --> --}}
 
-                <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">Stock</span>
-                    </a>
-                    <ul class="nk-menu-sub">
-                        <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Stock List</span></a>
-                        </li>
-                    </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
+                
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">

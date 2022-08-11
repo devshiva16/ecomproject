@@ -14,7 +14,8 @@ class CityController extends Controller
      */
     public function index()
     {
-        //
+        $city_list = City::all();
+        return view('admin.address.city-list',['city_list'=>$city_list]);
     }
 
     /**

@@ -16,7 +16,7 @@ class CreateCustomerReviewRatingsTable extends Migration
         Schema::create('customer__review__ratings', function (Blueprint $table) {
             $table->id();
             $table->string('customer_id')->nullable();
-            $table->string('ratig')->nullable();
+            $table->string('rating')->nullable();
             $table->string('review')->nullable();
             $table->boolean('status');
             $table->boolean('is_delete');

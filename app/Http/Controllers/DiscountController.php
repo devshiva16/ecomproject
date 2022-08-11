@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Discount;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class DiscountController extends Controller
@@ -14,7 +15,8 @@ class DiscountController extends Controller
      */
     public function index()
     {
-        //
+        $discount = Discount::all();
+        return view('admin.product.discount',['discount'=>$discount]);
     }
 
     /**
@@ -24,7 +26,8 @@ class DiscountController extends Controller
      */
     public function create()
     {
-        //
+        $product = Product::all();
+        return view('admin.product.add-discount',['product'=>$product]);
     }
 
     /**

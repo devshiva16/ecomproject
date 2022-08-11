@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Stock;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class StockController extends Controller
      */
     public function index()
     {
-        //
+        $stock_list = Stock::all();
+        return view('admin.product.stock-list',['stock_list'=>$stock_list]);
     }
 
     /**
@@ -24,7 +26,9 @@ class StockController extends Controller
      */
     public function create()
     {
-        //
+        $product = Product::all();
+        $category = Product::all();
+        return view('admin.product.add-stock',['product'=>$product,'category'=>$category]);
     }
 
     /**

@@ -14,7 +14,8 @@ class StateController extends Controller
      */
     public function index()
     {
-        //
+        $state_list = State::all();
+        return view ('admin.address.state-list',['state_list'=>$state_list]);
     }
 
     /**

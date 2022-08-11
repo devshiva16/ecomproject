@@ -7,15 +7,22 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TempController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\CountryController;
+use App\Http\Controllers\CustomerReviewRatingController;
+use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\OrderItumController;
 use App\Http\Controllers\OrderTableController;
 use App\Http\Controllers\OrderTransationController;
+use App\Http\Controllers\PincodeDeliverableController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SalesController;
+use App\Http\Controllers\StateController;
+use App\Http\Controllers\StockController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserRoleController;
 use App\Http\Controllers\WishlistController;
-
+use App\Models\Discount;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +52,10 @@ Route::resource('product',ProductController::class);
 
 Route::resource('category',CategoryController::class);
 
+Route::resource('stock',StockController::class);
+
+Route::resource('discount',DiscountController::class);
+
 Route::get('temp',[TempController::class,'index']);
 
 Route::get('sales',[SalesController::class,'index']);
@@ -52,6 +63,16 @@ Route::get('sales',[SalesController::class,'index']);
 
 // Customer
 Route::resource('customer',CustomerController::class);
+Route::resource('rating',CustomerReviewRatingController::class);
+
+
+// address
+Route::resource('city',CityController::class);
+Route::resource('state',StateController::class);
+Route::resource('country',CountryController::class);
+Route::resource('pincode',PincodeDeliverableController::class);
+
+
 
 Route::get('cart',[CartController::class,'index']);
 Route::get('cart/add',[CartController::class,'create']);
