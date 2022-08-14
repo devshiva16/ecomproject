@@ -21,7 +21,7 @@
                   <li class="nk-menu-item has-sub">
                       <a href="#" class="nk-menu-link nk-menu-toggle">
                           <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
-                          <span class="nk-menu-text">User Manage</span>
+                          <span class="nk-menu-text">Manage User</span>
                       </a>
                       <ul class="nk-menu-sub">
                           <li class="nk-menu-item">
@@ -33,7 +33,7 @@
                       </ul><!-- .nk-menu-sub -->
                   </li><!-- .nk-menu-item -->
 
-                  <li class="nk-menu-item has-sub">
+                  {{-- <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-building"></em></span>
                         <span class="nk-menu-text">Address</span>
@@ -44,7 +44,7 @@
                             <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Address List</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
+                </li><!-- .nk-menu-item --> --}}
 
                   <li class="nk-menu-item has-sub">
                     <a href="" class="nk-menu-link nk-menu-toggle">

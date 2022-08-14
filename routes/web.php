@@ -19,6 +19,7 @@ use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\StateController;
 use App\Http\Controllers\StockController;
+use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserRoleController;
 use App\Http\Controllers\WishlistController;
@@ -50,7 +51,11 @@ Route::resource('user-role',UserRoleController::class);
 // Product
 Route::resource('product',ProductController::class);
 
+Route::post('category/status',[CategoryController::class,'changeStatus']);
 Route::resource('category',CategoryController::class);
+
+Route::get('subcategory/getlist/{categoryid}',[SubCategoryController::class,'GetSubCategoriesByCategoryId']);
+Route::resource('subcategory',SubCategoryController::class);
 
 Route::resource('stock',StockController::class);
 

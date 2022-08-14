@@ -83,6 +83,18 @@ class CategoryController extends Controller
         //
     }
 
+    public function changeStatus(Request $request){
+        $category = Category::where('id',$request->id)->first();
+        if($category){
+            $category->status = !$category->status;
+            $category->save();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     /**
      * Remove the specified resource from storage.
      *

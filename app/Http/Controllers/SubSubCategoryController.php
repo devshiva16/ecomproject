@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategory;
+use App\Models\SubSubCategory;
 use Illuminate\Http\Request;
 
-class SubCategoryController extends Controller
+class SubSubCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,6 @@ class SubCategoryController extends Controller
     public function index()
     {
         //
-    }
-
-    /**
-     * Get List of Sub Category based on Category Id
-     * @return \Illuminate\Http\Response
-     */
-    public function GetSubCategoriesByCategoryId(Request $request){
-        // dd($request);
-        $list = SubCategory::where('category_id',$request->categoryid)->get();
-        return $list;
     }
 
     /**
@@ -51,10 +41,10 @@ class SubCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\SubSubCategory  $subSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategory $subCategory)
+    public function show(SubSubCategory $subSubCategory)
     {
         //
     }
@@ -62,10 +52,10 @@ class SubCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\SubSubCategory  $subSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategory $subCategory)
+    public function edit(SubSubCategory $subSubCategory)
     {
         //
     }
@@ -74,10 +64,10 @@ class SubCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\SubSubCategory  $subSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, SubSubCategory $subSubCategory)
     {
         //
     }
@@ -85,10 +75,10 @@ class SubCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SubCategory  $subCategory
+     * @param  \App\Models\SubSubCategory  $subSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubCategory $subCategory)
+    public function destroy(SubSubCategory $subSubCategory)
     {
         //
     }

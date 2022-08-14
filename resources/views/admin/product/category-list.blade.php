@@ -17,22 +17,23 @@
             <div class="card-inner">
                 <table class="datatable-init-export nowrap table" data-export-title="Export">
                     <thead>
-                                                    
                         <tr>
+                            <th>Sno</th>
                             <th>Category Name</th>
-                       {{-- <th>Address</th> --}}
-                            {{-- <th>Status</th> --}}
+                            <th>Status</th>
                         </tr>
-                        
                     </thead>
                     <tbody>
-
                         @foreach ($category_list as $data)
-
                         <tr>
+                            <td>{{ $loop->index + 1 }}</td>
                             <td>{{$data->name}}</td>
-                            {{-- <td>{{$data->address_id}}</td> --}}
-                            {{-- <td>{{$data->status}}</td> --}}
+                            <td>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitches{{$data->id}}" {{$data->status==1?'checked':''}}>
+                                    <label class="custom-control-label" for="customSwitches{{$data->id}}"></label>
+                                <div>
+                            </td>
                         </tr>
                         @endforeach
                         
@@ -46,4 +47,31 @@
       
 </div><!-- .components-preview -->
 
+@endsection
+
+@section("custom-footer")
+    <script>
+        $(document).ready(function() {
+            $('input[type=checkbox]').change(function() {
+                /// Sending data to laravel method
+                $.ajax({
+                    headers: {
+                            'X-CSRF-TOKEN': "{{csrf_token()}}",
+                        },
+                    url : "category/status",
+                    type : "POST",
+                    data: {id:this.id.match(/\d+/g)},
+                    success : function(response){
+                        console.log(response);
+                    },
+                    error: function(err){
+                        console.log(err);
+                    }
+                });
+            });
+            // $('input[type=checkbox]').each(function(index, value) {
+            //     console.log(`${index}: ${this.id}, ${this.value}`);
+            // });
+        });
+    </script>
 @endsection

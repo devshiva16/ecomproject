@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductImage;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -29,7 +30,8 @@ class ProductController extends Controller
     public function create()
     {
         $categoryList = Category::all();
-        return view('admin.product.add-product',['category_list'=>$categoryList]);
+        $subCategoryList = SubCategory::all();
+        return view('admin.product.add-product',['category_list'=>$categoryList,'sub_category_list'=>$subCategoryList]);
     }
 
     /**
@@ -45,15 +47,15 @@ class ProductController extends Controller
         $insert_product = new Product();
         $insert_product->name = $request->name;
         $insert_product->code = $request->code;
-        $insert_product->short_name = $request->short_name;
+        // $insert_product->short_name = $request->short_name;
         $insert_product->price = $request->price;
         // $insert_product->sale_price = $request->sale_price;
         $insert_product->unit = $request->unit;
         $insert_product->weight = $request->weight;
-        $insert_product->sku = $request->sku;
+        // $insert_product->sku = $request->sku;
         $insert_product->category = $request->category;
         $insert_product->sub_category = $request->sub_category;
-        $insert_product->discription = $request->category;
+        $insert_product->discription = $request->discription;
         // $insert_product->is_discount = false;
         $insert_product->status = true;
         $insert_product->is_delete = false;
