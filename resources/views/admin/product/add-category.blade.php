@@ -18,19 +18,21 @@
               <form action="/category" method="post" enctype="multipart/form-data" class="form-validate">
                 @csrf
                   <div class="row g-gs">
-                      <div class="col-md-12">
+
+                    <div class="col-md-3">
                           <div class="form-group">
                               <label class="form-label" for="fv-full-name">Category Name</label>
                               <div class="form-control-wrap">
-                                  <input type="text" class="form-control" id="name" name="name" required>
+                                  <input type="text" class="form-control" id="name" name="name" value="" required>
                               </div>
                           </div>
                       </div>
 
+
                       <div class="col-md-12">
                           <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-primary">Save Category</button>
-                            <a href="{{ asset('/category')}}" class="btn btn-lg btn-danger">Cancel</a>
+                            <button type="submit" class="btn btn-md btn-primary">Save Category</button>
+                            <a href="{{ asset('/category')}}" class="btn btn-md btn-danger">Cancel</a>
                           </div>
                       </div>
                   </div>

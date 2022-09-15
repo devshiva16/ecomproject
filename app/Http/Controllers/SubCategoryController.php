@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,9 @@ class SubCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $data = SubCategory::with('category')->get();
+        // dd($data);
+        return view('admin.product.sub-category-list',['subcategorylist'=>$data]);
     }
 
     /**
@@ -34,7 +37,8 @@ class SubCategoryController extends Controller
      */
     public function create()
     {
-        //
+        $categorylist = Category::all();
+        return view('admin.product.add-subcategory',['categorylist'=>$categorylist]);
     }
 
     /**
@@ -45,7 +49,18 @@ class SubCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $subcategory = new SubCategory();
+        $subcategory->category_id = $request->category;
+        $subcategory->subcategory_name = $request->name;
+        $subcategory->status=true;
+        $subcategory->is_delete=false;
+        $subcategory->save();
+
+
+         // $data->save();
+         return redirect('/subcategory');
+
     }
 
     /**
@@ -65,9 +80,12 @@ class SubCategoryController extends Controller
      * @param  \App\Models\SubCategory  $subCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategory $subCategory)
+    public function edit(SubCategory $subcategory)
     {
-        //
+        $categorylist = Category::all();
+        $subcat = SubCategory::find($subcategory->id);
+        // dd($subcat);
+        return view('admin.product.edit-subcategory',['subCategory'=>$subcat,'categorylist'=>$categorylist]);
     }
 
     /**
@@ -77,9 +95,16 @@ class SubCategoryController extends Controller
      * @param  \App\Models\SubCategory  $subCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategory $subCategory)
+    public function update(Request $request, SubCategory $subcategory)
     {
-        //
+        $update_data = [
+            'category_id'=>$request->category,
+            'subcategory_name'=>$request->name
+        ];
+
+        $subcategory->update($update_data);
+
+        return $this->index();
     }
 
     /**
@@ -91,5 +116,17 @@ class SubCategoryController extends Controller
     public function destroy(SubCategory $subCategory)
     {
         //
+    }
+
+    public function changeStatus(Request $request){
+        $category = SubCategory::where('id',$request->id)->first();
+        if($category){
+            $category->status = !$category->status;
+            $category->save();
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

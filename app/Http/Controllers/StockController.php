@@ -15,7 +15,7 @@ class StockController extends Controller
      */
     public function index()
     {
-        $stock_list = Stock::all();
+        $stock_list = Stock::with('product')->get();
         return view('admin.product.stock-list',['stock_list'=>$stock_list]);
     }
 
@@ -27,8 +27,8 @@ class StockController extends Controller
     public function create()
     {
         $product = Product::all();
-        $category = Product::all();
-        return view('admin.product.add-stock',['product'=>$product,'category'=>$category]);
+        // $category = Product::all();
+        return view('admin.product.add-stock',['product'=>$product]);//,'category'=>$category]);
     }
 
     /**
@@ -39,7 +39,23 @@ class StockController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd(($request));
+        $product_stock = Stock::where('product',$request->product)->get();
+        // dd($product_stock);
+        if($product_stock->count()>0){
+            $oldQunatity = $product_stock[0]->in_stock_quantity;
+            $product_stock[0]->in_stock_quantity = $oldQunatity  + $request->stock;
+            $product_stock[0]->save();
+        }else{
+            $insert_data = new Stock();
+            $insert_data->product = $request->product;
+            $insert_data->in_stock_quantity = $request->stock;
+            $insert_data->status = true;
+            $insert_data->is_delete = false;
+            // dd($insert_data);
+            $insert_data->save();
+        }
+        return redirect('/stock');
     }
 
     /**

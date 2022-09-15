@@ -56,17 +56,24 @@
                         <li class="nk-menu-item">
                             <a href="/product" class="nk-menu-link"><span class="nk-menu-text">Product List</span></a>
                         </li>
+
+                        <li class="nk-menu-item">
+                            <a href="/producttype" class="nk-menu-link"><span class="nk-menu-text">Product Type</span></a>
+                        </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
                         <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">Product Category</span>
+                        <span class="nk-menu-text">Category / Sub Category</span>
                     </a>
                     <ul class="nk-menu-sub">
                         <li class="nk-menu-item">
-                            <a href="/category" class="nk-menu-link"><span class="nk-menu-text">Product Category</span></a>
+                            <a href="/category" class="nk-menu-link"><span class="nk-menu-text">Category</span></a>
+                        </li>
+                        <li class="nk-menu-item">
+                            <a href="/subcategory" class="nk-menu-link"><span class="nk-menu-text">Sub Category</span></a>
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
@@ -120,42 +127,7 @@
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
-
-                  {{-- <li class="nk-menu-item has-sub">
-                      <a href="#" class="nk-menu-link nk-menu-toggle">
-                          <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                          <span class="nk-menu-text">City</span>
-                      </a>
-                      <ul class="nk-menu-sub">
-                          <li class="nk-menu-item">
-                              <a href="/city" class="nk-menu-link"><span class="nk-menu-text">City List</span></a>
-                          </li>
-                      </ul><!-- .nk-menu-sub -->
-                  </li><!-- .nk-menu-item -->
-
-                  <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">State</span>
-                    </a>
-                    <ul class="nk-menu-sub">
-                        <li class="nk-menu-item">
-                            <a href="/state" class="nk-menu-link"><span class="nk-menu-text">State List</span></a>
-                        </li>
-                    </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
-
-                <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">Country</span>
-                    </a>
-                    <ul class="nk-menu-sub">
-                        <li class="nk-menu-item">
-                            <a href="/country" class="nk-menu-link"><span class="nk-menu-text">Country List</span></a>
-                        </li>
-                    </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item --> --}}
+                  
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -192,32 +164,6 @@
                         </li>
                     </ul><!-- .nk-menu-sub -->
                 </li><!-- .nk-menu-item -->
-
-                {{-- <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">Cart</span>
-                    </a>
-                    <ul class="nk-menu-sub">
-                        <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Cart</span></a>
-                        </li>
-                    </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item -->
-
-                <li class="nk-menu-item has-sub">
-                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                        <span class="nk-menu-text">Wishlist</span>
-                    </a>
-                    <ul class="nk-menu-sub">
-                        <li class="nk-menu-item">
-                            <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">Wishlist</span></a>
-                        </li>
-                    </ul><!-- .nk-menu-sub -->
-                </li><!-- .nk-menu-item --> --}}
-
-                
 
                 <li class="nk-menu-item has-sub">
                     <a href="#" class="nk-menu-link nk-menu-toggle">

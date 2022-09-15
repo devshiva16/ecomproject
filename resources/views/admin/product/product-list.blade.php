@@ -19,17 +19,13 @@
                     <thead>
                                                     
                         <tr>
+                            <th>Code / Sku</th>
                             <th>Name</th>
-                            <th>Code</th>
-                            <th>Short Name</th>
-                            <th>Price</th>
-                            {{-- <th>Sale Price</th> --}}
-                            <th>Unit</th>
-                            <th>Weight</th>
-                            <th>SKU</th>
                             <th>Category</th>
-                            {{-- <th>Discription</th> --}}
-                            <th>Discount</th>
+                            <th>Sub Category</th>
+                            <th>Product Type</th>
+                            <th>Unit</th>
+                            <th>Price</th>
                             <th>Status</th>
                         </tr>
                         
@@ -39,17 +35,13 @@
                         @foreach ($product_list as $data)
 
                         <tr>
-                            <td>{{$data->name}}</td>
-                            <td>{{$data->code}}</td>
-                            <td>{{$data->short_name}}</td>
-                            <td>{{$data->price}}</td>
-                            {{-- <td>{{$data->sale_price}}</td> --}}
-                            <td>{{$data->unit}}</td>
-                            <td>{{$data->weight}}</td>
                             <td>{{$data->sku}}</td>
+                            <td>{{$data->name}}</td>
                             <td>{{$data->category}}</td>
-                            {{-- <td>{{$data->discription}}</td> --}}
-                            <td>{{$data->is_discount}}</td>
+                            <td>{{$data->sub_category}}</td>
+                            <td>{{$data->product_category}}</td>
+                            <td>{{$data->weight}} {{$data->unit}}</td>
+                            <td>{{$data->price}}</td>
                             <td>{{$data->status}}</td>
                         </tr>
                         @endforeach

@@ -14,6 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        // dd($data = Category::with('subcategory')->get());
 
         $category_list = Category::all();
 
@@ -44,9 +45,7 @@ class CategoryController extends Controller
         $category->is_delete=false;
         $category->save();
        
-        
-        // $data->save();
-         return redirect('/category');
+        return $this->index();
     }
 
     /**
@@ -68,7 +67,10 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $cat = Category::find($category->id);
+        // dd($category);
+
+        return view('admin.product.edit-category',['category'=>$cat]);
     }
 
     /**
@@ -80,7 +82,14 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $update_data = [
+            'name'=>$request->name,
+            'status'=>$request->status
+        ];
+
+        $category->update($update_data);  
+        
+        return $this->index();
     }
 
     public function changeStatus(Request $request){
@@ -103,6 +112,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return redirect('/category')->with('success', 'Category deleted successfully');
     }
 }

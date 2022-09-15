@@ -16,6 +16,7 @@ use App\Http\Controllers\OrderTableController;
 use App\Http\Controllers\OrderTransationController;
 use App\Http\Controllers\PincodeDeliverableController;
 use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\ProducttypeController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\StateController;
 use App\Http\Controllers\StockController;
@@ -24,6 +25,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserRoleController;
 use App\Http\Controllers\WishlistController;
 use App\Models\Discount;
+use App\Models\Producttype;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,10 +53,17 @@ Route::resource('user-role',UserRoleController::class);
 // Product
 Route::resource('product',ProductController::class);
 
+
+Route::post('ptoducttype/status',[Producttype::class,'changeStatus']);
+Route::resource('producttype',ProducttypeController::class);
+
 Route::post('category/status',[CategoryController::class,'changeStatus']);
+Route::patch('category/update',[CategoryController::class,'update']);
 Route::resource('category',CategoryController::class);
 
 Route::get('subcategory/getlist/{categoryid}',[SubCategoryController::class,'GetSubCategoriesByCategoryId']);
+
+Route::post('subcategory/status',[SubCategoryController::class,'changeStatus']);
 Route::resource('subcategory',SubCategoryController::class);
 
 Route::resource('stock',StockController::class);
@@ -100,3 +109,7 @@ Route::get('user-role',[UserRoleController::class,'index']);
 Route::get('users',[UserController::class,'index']);
 
 Route::get('address',[AddressController::class,'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

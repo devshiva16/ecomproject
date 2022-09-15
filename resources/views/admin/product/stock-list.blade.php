@@ -29,8 +29,8 @@
                         @foreach ($stock_list as $data)
 
                         <tr>
-                            <td>{{$data->product}}</td>
-                            <td>{{$data->his_stock_quantity}}</td>
+                            <td>{{$data->product->name}}</td>
+                            <td>{{$data->in_stock_quantity}}</td>
                         </tr>
                         @endforeach
                         

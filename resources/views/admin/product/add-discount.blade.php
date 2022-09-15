@@ -48,8 +48,8 @@
 
                       <div class="col-md-12">
                           <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-primary">Save Discount</button>
-                            <a href="{{ asset('/discount')}}" class="btn btn-lg btn-danger">Cancel</a>
+                            <button type="submit" class="btn btn-md btn-primary">Save Discount</button>
+                            <a href="{{ asset('/discount')}}" class="btn btn-md btn-danger">Cancel</a>
                           </div>
                       </div>
                   </div>
